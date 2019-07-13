@@ -1,44 +1,56 @@
+"use strict";
+
 // Create a function that reverses a word
-
-function reverseWord(word) {
-    const splitWord = word.split('');
-    const reverseWord = splitWord.reverse();
-    const joinWord =  reverseWord.join('');
-
-    return joinWord
+function reverseWord (word){
     
+    return word.split("").reverse().join("");
 }
 
-console.log(reverseWord('hello')) 
 
-// function reverseWord(word) {
-//     return word.split("").reverse().join("");
-// }
+// console.log (reverseWord("hello"))
 
 
 // Create a function that takes an array of words and returns a new array of the
  // words with each word reversed.
-function arrayReverse(array){
 
-const newList = []
 
-for (const word of array){
-    const splitWord = word.split('');
-    const reverseWord = splitWord.reverse();
-    const joinWord =  reverseWord.join('');
-    newList.push(joinWord)
-}
 
-return newList
+ function splitString (pharase){
 
-}
+    const array = [];
 
-console.log(arrayReverse(['eloi', 'you', 'el']))
+    const pharaseInArray = pharase.split(" ").reverse();
+
+    for (const x of pharaseInArray){
+        array.push(reverseWord (x));       
+    }
+
+return array;
+    
+ }
+
+// console.log(splitString ("your foto"))
+
+// Alternatively:
+
+// function splitString (pharase){
+
+//     return pharase.map(reverseWord);
+
+// }
+
+
+
+ //Take an array of letters and merge them into a string
+
+
+
+
+
+
+
 
 // Create a function that returns a random word from an array
-
-
-
 
 
 // Create an array of words and save it to a variable. Using your functions create
